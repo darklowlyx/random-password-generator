@@ -3,4 +3,63 @@
 * {
 	background-color: #101010;
 	color: #f0f0f0;
+	font-family: monospace;
+}
+
+.generator {
+	height: 100dvh;
+	max-width: 270px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	font-size: 2rem;
+}
+.generator__password {
+	display: flex;
+	align-items: center;
+	box-shadow: 0 5px 20px #101010;
+	border-radius: 5px;
+	padding: 10px 20px;
+	justify-content: space-between;
+	width: 100%;
+	background-color: #1f1f1f;
+}
+.generator__password-text{
+	background-color: #1f1f1f;
+}
+.generator__password-copy {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5px;
+	border-radius: 10px;
+	background-color: #1f1f1f;
+	width: 40px;
+	height: 40px;
+	box-shadow: 0 0 10px #101010;
+	transition: all 0.2s ease;
+}
+.generator__password-copy img{
+	width: 80%;
+	height: 80%;
+	background-color: #1f1f1f;
+}
+.generator__password-copy:hover{
+	transform: rotate(25deg);
+}
+
+.generator__button {
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 2px solid #f0f0f0;
+	transition: all 0.2s ease;
+}
+
+.generator__button:hover{
+	background-color: #f0f0f0;
+	color: #101010;
 }
