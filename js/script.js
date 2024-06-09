@@ -22,8 +22,12 @@ function generatePassword(length, includeLowercase, includeUppercase, includeNum
 		const randomIndex = Math.floor(Math.random() * allowedChars.length);
 		password += allowedChars[randomIndex];
 	}
-
 	return password;
+}
+
+function copyPassword() {
+	let copyText = document.querySelector(".generator__password-text");
+	navigator.clipboard.writeText(copyText.textContent);
 }
 
 const passwordLength = 12;
