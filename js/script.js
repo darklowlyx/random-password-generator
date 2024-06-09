@@ -1,3 +1,5 @@
+let passwordText = document.querySelector(".generator__password-text");
+
 function generatePassword(length, includeLowercase, includeUppercase, includeNumbers, includeSymbols) {
 	const lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
 	const uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -44,4 +46,5 @@ const password = generatePassword(
 	includeSymbols
 );
 
-console.log(`Generated password: ${password}`)
+passwordText.textContent = password;
+
